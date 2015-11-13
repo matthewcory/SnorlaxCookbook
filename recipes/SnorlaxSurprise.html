@@ -6,7 +6,11 @@
     
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Snorlax Surprise</title>
      
-    <link rel="stylesheet" href="liveconnect.css" /></head><body>  
+    <link rel="stylesheet" href="liveconnect.css" /></head>
+    <script type="text/javascript" src="..\js\jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="..\js\dec2frac.js"></script>
+    
+<body>  
   <h1 style="text-align: center;">Snorlax Surprise</h1>
   
   <div style="text-align: center;">
@@ -15,18 +19,34 @@
 		<h2>Ingredients</h2>
 		<hr align="left" width="120" />
 		<ul>
-			<li>2 boneless skinless chicken breasts</li>
-			<li>1/4 cup ketchup</li>
-			<li>1/8 cup BBQ sauce</li>
-			<li>1/4 cup ranch dressing</li>
-			<li>1 can black beans</li>
-			<li>1 can red kidney beans</li>
-			<li>2 to 2 1/2 cups uncooked rice (or about 6-8 cups prepared)</li>
+			<li><b>2</b> boneless skinless chicken breasts</li>
+			<li><b>1/4</b> cup ketchup</li>
+			<li><b>1/8</b> cup BBQ sauce</li>
+			<li><b>1/4</b> cup ranch dressing</li>
+			<li><b>1</b> can black beans</li>
+			<li><b>1</b> can red kidney beans</li>
+			<li><b>2</b> to <b>2 1/2</b> cups uncooked rice (or about <b>6</b>-<b>8</b> cups prepared)</li>
 		</ul>
+		
+		<!--
+		form to update the current serving sizes.
+		-->
+		<form action="">
+			<label>
+				Multiply current number of servings by:
+				<input id="num" type="text" name="number" size="2"
+				/>
+				<input type="button" value="Change" name="btn" onclick="start_change()"/>
+			</label>
+				Currently multipling by: <i id="curr">1</i>
+		</form>
+		
+		
 		<br />
 		<h2>Directions</h2>
 		<hr align="left" width="120" />
 		<pre>    Put chicken breast (thawed, frozen, cooked, it doesn't matter much)<br />into a frying pan. Add water until they are about 3/4 covered. Add ketchup, <br />BBQ sauce and ranch dressing and stir up. Cook until water is mostly boiled<br />out, stiring occasionally. Remove chicken and cut into about 1 in. chunks.<br />Put back in pan and add beans and cook for another twenty minutes on <br />medium low.<br /><br />    Meanwhile, prepare rice according to directions on package and place in a <br />13 by 9 inch pan, spreading until it forms a layer. Add the chicken and <br />beans mixture on top, then let cool for a few minutes.<br /><br />    Serve with shredded cheese on top or on tortillas with cheese as well.<br />    <br />    Note: The 13 by 9 inch pan is not necessary, the parts can be mixed in <br />a bowl just as easily.</pre>
 <hr />
 <pre>Recipie From: Snorlax</pre>
-	</body></html>
+	</body>
+	</html>
