@@ -7,36 +7,50 @@
   
   
   <link rel="stylesheet" href="liveconnect.css" />
+  <script type="text/javascript" src="..\js\dec2frac.js"></script>
+  <script type="text/javascript" src="..\js\jquery-2.1.4.js"></script>
 
 </head><body>
 <div style="text-align: center;">
 <h1>Easiest Beef Enchiladas</h1>
-<img src="./Assets/Chef_Snorlax.gif" /> </div>
+<img style="width: 200px; height: 150px;" alt="Snorlax Surprise" src="Assets/Enchiladas.jpg" /> </div>
 
 <h2>Ingredients</h2>
 
 <hr align="left" width="120" />
 <ul>
 
-  <li>1 lb. ground beef<br />
+  <li><b>1</b> lb. ground beef<br />
 </li>
   <br />
-  <li>1 16 oz jar salsa<br />
+  <li><b>1</b> 16 oz jar salsa<br />
 </li>
   <br />
-  <li>2 cups shredded cheddar and Montery Jack cheese (8 oz pkg)<br />
+  <li><b>2</b> cups shredded cheddar and Montery Jack cheese (8 oz pkg)<br />
 </li>
   <br />
-  <li>12 flour tortillas<br />
+  <li><b>12</b> flour tortillas<br />
 </li>
 </ul>
+<!--
+		form to update the current serving sizes.
+		-->
+		<form action="">
+			<label>
+				Multiply current number of servings by:
+				<input id="num" type="text" name="number" size="2"
+				/>
+				<input type="button" value="Change" name="btn" onclick="start_change()"/>
+			</label>
+				<br>Currently multipling by: <i id="curr">1</i>
+		</form>
 
 <br />
 
 <h2>Directions</h2>
 
 <hr align="left" width="120" />
-<pre>	Preheat oven to 350*F.<br /><br />	Brown ground beef, drain. Stir in 1/2 cup salsa and 1 cup cheese. Spread 1 cup<br />salsa in bottom of a 13x9 in. baking dish. Place 1/4 cup meat mixture on each tortilla,<br />roll up and place in pan seam side down. Top with remaining salsa and cheese.<br />Bake at 350*F for 20 min.<br /><br />Enjoy!</pre>
+<pre>	Preheat oven to 350*F.<br /><br />	Brown ground beef, drain. Stir in <b>1/2</b> cup salsa and <b>1</b> cup cheese. Spread <b>1</b> cup<br />salsa in bottom of each 13x9 in. baking dish. Place 1/4 cup meat mixture on each tortilla,<br />roll up and place in pan seam side down. Top with remaining salsa and cheese.<br />Bake at 350*F for 20 min.<br /><br />Makes <b>12</b> enchiladas.<br /><br />Enjoy!</pre>
 
 <hr />
 <pre>Recipie From: CCYSA 1st Stake 2nd Ward Relief Society</pre>

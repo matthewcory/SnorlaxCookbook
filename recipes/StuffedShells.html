@@ -7,6 +7,8 @@
   
   
   <link rel="stylesheet" href="liveconnect.css" />
+  <script type="text/javascript" src="..\js\dec2frac.js"></script>
+  <script type="text/javascript" src="..\js\jquery-2.1.4.js"></script>
 
 </head><body>
 <div style="text-align: center;">
@@ -18,25 +20,26 @@
 <hr align="left" width="120" />
 <ul>
 
-  <li>1 box large macaroni shells<br />
-</li>
-  <br />
-  <li>1 lb. package mozzarella cheese<br />
-</li>
-  <br />
-  <li>1/4 cup grated parmesan cheese<br />
-</li>
-  <br />
-  <li>2 lb. riccotta cheese<br />
-    <br />
-</li>
-  <li>2 eggs<br />
-    <br />
-  </li>
-  <li>3 Tbsp. minced parsley<br />
-  </li>
+  <li><b>1</b> box large macaroni shells</li>
+  <li><b>1</b> lb. package mozzarella cheese</li>
+  <li><b>1/4</b> cup grated parmesan cheese</li>
+  <li><b>2</b> lb. riccotta cheese</li>
+  <li><b>2</b> eggs</li>
+  <li><b>3</b> Tbsp. minced parsley</li>
 
 </ul>
+<!--
+		form to update the current serving sizes.
+		-->
+		<form action="">
+			<label>
+				Multiply current number of servings by:
+				<input id="num" type="text" name="number" size="2"
+				/>
+				<input type="button" value="Change" name="btn" onclick="start_change()"/>
+			</label>
+				<br>Currently multipling by: <i id="curr">1</i>
+		</form>
 
 <br />
 
