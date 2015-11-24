@@ -24,6 +24,7 @@
 			<li role="presentation"	class="active"><a href="#">Videos</a></li>
 			<li role="presentation"><a href="tech.html">Technology Used</a></li>
 		</ul>
+		<div style="padding-left: 15px">
 		<?php
 		$host = 'localhost';
 		$user = 'root';
@@ -51,6 +52,7 @@
 		}
 
 		?>
+		</div>
 
 	</body>
 </html>

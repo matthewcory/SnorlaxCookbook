@@ -25,6 +25,7 @@
 			<li role="presentation"><a href="tech.html">Technology Used</a></li>
 		</ul>
 		
+		<div style="padding-left: 15px">
 		<?php
 		$host = 'localhost';
 		$user = 'root';
@@ -45,12 +46,13 @@
 		if (mysqli_num_rows($result) > 0) {
 			// output data of each row
 			while($row = mysqli_fetch_assoc($result)) {
-				echo '<h3> <a href="recipes/recipesPage.php?ID=' . $row["RecipieID"] . '">' . $row["Title"] . "</h3><br>";
+				echo '<h3> <img src="recipes/assets/' . $row["Picture"] . '" width=85 height=75/> <a href="recipes/recipesPage.php?ID=' . $row["RecipieID"] . '">' . $row["Title"] . "</h3><br>";
 			}
 		} else {
 			echo "0 results";
 		}
 
 		?>
+		</div>
 	</body>
 </html>
